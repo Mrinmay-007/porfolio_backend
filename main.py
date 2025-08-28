@@ -14,7 +14,7 @@ origins = [
     "http://localhost:5173",
     "http://127.0.0.1:5173",
     "https://portfolio-website-eta-eight-67.vercel.app/",
-    "https://portfolio-website-eta-eight-67.vercel.app/contact"
+    # "https://portfolio-website-eta-eight-67.vercel.app/contact"
 ]
 
 
