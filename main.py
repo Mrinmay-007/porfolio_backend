@@ -13,34 +13,21 @@ from typing import Optional
 
 
 app = FastAPI()
+
+origins = [
+    "http://localhost:5173",
+    "http://127.0.0.1:5173",
+    "https://portfolio-website-eta-eight-67.vercel.app",
+]
+
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=[
-        "http://localhost:5173",
-        "http://127.0.0.1:5173",
-        "https://portfolio-website-eta-eight-67.vercel.app",
-    ],
+    allow_origins=origins,
     allow_credentials=True,
-    allow_methods=["*"],   # <-- ensures OPTIONS, POST, GET etc are allowed
+    allow_methods=["*"],   # <-- ensures OPTIONS is handled
     allow_headers=["*"],
 )
 
-
-# origins = [
-#     "http://localhost:5173",
-#     "http://127.0.0.1:5173",
-#     "https://portfolio-website-eta-eight-67.vercel.app"
-# ]
-
-
-# app.add_middleware(
-#     CORSMiddleware,
-#     allow_origins=origins,
-#     allow_credentials=True,
-#     allow_methods=["*"],
-#     allow_headers=["*"],
-
-# )
 
 
 # ---- Your Email Config ----

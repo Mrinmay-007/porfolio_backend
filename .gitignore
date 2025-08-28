@@ -3,3 +3,4 @@ a.txt
 __pycache__/
 *.pyc
 app.py
+a.json
