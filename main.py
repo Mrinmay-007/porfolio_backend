@@ -14,15 +14,21 @@ origins = [
     "https://portfolio-website-one-xi-34.vercel.app",
 ]
 
+# app.add_middleware(
+#     CORSMiddleware,
+#     allow_origins=origins,
+#     allow_credentials=True,
+#     allow_methods=["*"],
+#     allow_headers=["*"],
+#     expose_headers=["Content-Range"]  # important
+# )
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=origins,
+    allow_origins=origins,          # allow these only
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
-    expose_headers=["Content-Range"]  # important
 )
-
 
 
 # ---- Your Email Config ----
