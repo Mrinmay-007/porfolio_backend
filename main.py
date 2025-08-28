@@ -91,6 +91,8 @@
 #     import uvicorn
 #     port = int(os.environ.get("PORT", 8000))
 #     uvicorn.run("main:app", host="0.0.0.0", port=port)
+
+
 from fastapi import FastAPI, BackgroundTasks, UploadFile, File, Form
 from pydantic import EmailStr
 import smtplib
@@ -109,7 +111,8 @@ app = FastAPI()
 origins = [
     "http://localhost:5173",
     "http://127.0.0.1:5173",
-    "https://portfolio-website-eta-eight-67.vercel.app", # <-- FIX: Trailing slash removed
+    "https://portfolio-website-eta-eight-67.vercel.app",
+    "https://porfoli-backend.onrender.com"
 ]
 
 
