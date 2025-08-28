@@ -6,6 +6,8 @@ from email.mime.multipart import MIMEMultipart
 from email.mime.application import MIMEApplication
 from fastapi.middleware.cors import CORSMiddleware
 import os
+
+
 app = FastAPI()
 
 origins = [
