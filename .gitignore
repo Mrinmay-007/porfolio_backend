@@ -1,0 +1,4 @@
+myenv
+a.txt
+__pycache__/
+*.pyc
